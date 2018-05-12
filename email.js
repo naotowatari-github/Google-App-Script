@@ -1,5 +1,5 @@
 function myFunction() {
-  var url = "";
+  var url = "GoogleスプレッドシートのURL";
   var spreadsheet = SpreadsheetApp.openByUrl(url);
   var sheet = spreadsheet.getSheetByName("集計");             //一番左のシートは配列のindex"0"で指定します
   
@@ -17,7 +17,7 @@ function myFunction() {
   
   var email = "宛先のアドレス";
   var strSubject = "本日給食を食べる人数";
-  var strBody = "〇〇さん\n\n\nお疲れ様です。\n\n本日は\n" + message + "\nになっております。\n\n何卒よろしくお願いいたします。\n\n\n渡"  
+  var strBody = "〇〇さん\n\n\nお疲れ様です。\n\n本日は\n" + message + "\nになっております。\n\n何卒よろしくお願いいたします。\n\n\n"  
   var strFrom="自分のアドレス"; //From
   var strSender="差出人名"; //差出人
   
