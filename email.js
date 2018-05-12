@@ -1,5 +1,15 @@
 function myFunction() {
-  var url = "";
+  var currentDate = new Date();
+  var weekday = currentDate.getDay();
+  if (weekday == 0 || weekday == 6) {
+    return;
+  }
+  var calendar = CalendarApp.getCalendarById('ja.japanese#holiday@group.v.calendar.google.com');
+  if (calendar.getEventsForDay(currentDate, {max: 1}).length > 0) {
+    return;
+  }
+  
+  var url = "spreadsheetのURL";
   var spreadsheet = SpreadsheetApp.openByUrl(url);
   var sheet = spreadsheet.getSheetByName("シート名");             //一番左のシートは配列のindex"0"で指定します
   
