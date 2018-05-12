@@ -16,7 +16,7 @@ function main() {
         array.push(happyman);
         Logger.log(array);
         
-          var postUrl = 'https://hooks.slack.com/services/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';
+          var postUrl = '';
           var username = 'Happy Birthday';  // 通知時に表示されるユーザー名
           var icon = ':birthday:';  // 通知時に表示されるアイコン
           var message = '今日は' + array + 'の誕生日です。おめでとうございます！';  // 投稿メッセージ
