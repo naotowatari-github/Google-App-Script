@@ -1,7 +1,7 @@
 function myFunction() {
   var url = "";
   var spreadsheet = SpreadsheetApp.openByUrl(url);
-  var sheet = spreadsheet.getSheetByName("集計");             //一番左のシートは配列のindex"0"で指定します
+  var sheet = spreadsheet.getSheetByName("シート名");             //一番左のシートは配列のindex"0"で指定します
   
   var today = Utilities.formatDate(new Date(), "Asia/Tokyo", "MM-dd");
   var data = sheet.getDataRange().getValues(); //受け取ったシートのデータを二次元配列に取得
